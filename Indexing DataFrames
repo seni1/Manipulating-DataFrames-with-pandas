@@ -1,0 +1,45 @@
+Positional and labeled indexing
+Given a pair of label-based indices, sometimes it's necessary to find the corresponding positions. 
+In this exercise, you will use the Pennsylvania election results again. 
+The DataFrame is provided for you as election.
+
+
+Explore the DataFrame in the IPython Shell using election.head().
+Assign the row position of election.loc['Bedford'] to x.
+Assign the column position of election['winner'] to y.
+Hit 'Submit Answer' to print the boolean equivalence of the .loc and .iloc selections.
+
+
+# Assign the row position of election.loc['Bedford']: x
+x = 4
+
+# Assign the column position of election['winner']: y
+y = election.columns.get_loc("winner")
+
+# Print the boolean equivalence
+print(election.iloc[x, y] == election.loc['Bedford', 'winner'])
+
+---------------------------------------
+
+Indexing and column rearrangement
+There are circumstances in which it's useful to modify the order of your DataFrame columns. 
+We do that now by extracting just two columns from the Pennsylvania election results DataFrame.
+Your job is to read the CSV file and set the index to 'county'. 
+You'll then assign a new DataFrame by selecting the list of columns ['winner', 'total', 'voters']. 
+The CSV file is provided to you in the variable filename.
+
+# Import pandas
+import pandas as pd
+
+# Read in filename and set the index: election
+election = pd.read_csv(filename, index_col = 'county')
+
+# Create a separate dataframe with the columns ['winner', 'total', 'voters']: results
+results = election[['winner', 'total', 'voters']]
+
+# Print the output of results.head()
+print(results.head())
+
+-----------------------------------------
+
+
