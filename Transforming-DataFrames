@@ -1,0 +1,63 @@
+Apply the to_celsius() function over the ['Mean TemperatureF','Mean Dew PointF'] columns of the weather DataFrame.
+Reassign the column labels of df_celsius to ['Mean TemperatureC','Mean Dew PointC'] using the .columns attribute.
+Hit 'Submit Answer' to see the new DataFrame with the converted units.
+
+
+# Write a function to convert degrees Fahrenheit to degrees Celsius: to_celsius
+def to_celsius(F):
+    return 5/9*(F - 32)
+
+# Apply the function over 'Mean TemperatureF' and 'Mean Dew PointF': df_celsius
+df_celsius = ____
+
+# Reassign the column labels of df_celsius
+____ = ['Mean TemperatureC', 'Mean Dew PointC']
+
+# Print the output of df_celsius.head()
+print(df_celsius.head())
+
+
+-------------------------------------------------------
+
+
+Create a dictionary with the key:value pairs 'Obama':'blue' and 'Romney':'red'.
+Use the .map() method on the 'winner' column using the red_vs_blue dictionary you created.
+Print the output of election.head(). 
+This has been done for you, so hit 'Submit Answer' to see the new column!
+
+
+# Create the dictionary: red_vs_blue
+red_vs_blue = ____
+
+# Use the dictionary to map the 'winner' column to the new column: election['color']
+election['color'] = ____
+
+# Print the output of election.head()
+print(election.head())
+
+
+-------------------------------------------------------
+
+
+Import zscore from scipy.stats.
+Call zscore with election['turnout'] as input .
+Print the output of type(turnout_zscore). This has been done for you.
+Assign turnout_zscore to a new column in election as 'turnout_zscore'.
+Print the output of election.head(). 
+This has been done for you, so hit 'Submit Answer' to view the result.
+
+
+# Import zscore from scipy.stats
+____
+
+# Call zscore with election['turnout'] as input: turnout_zscore
+turnout_zscore = ____
+
+# Print the type of turnout_zscore
+print(type(turnout_zscore))
+
+# Assign turnout_zscore to a new column: election['turnout_zscore']
+____
+
+# Print the output of election.head()
+print(election.head())
