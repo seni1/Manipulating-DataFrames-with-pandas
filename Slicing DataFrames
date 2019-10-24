@@ -1,0 +1,73 @@
+Slice the row labels 'Perry' to 'Potter' and assign the output to p_counties.
+Print the p_counties DataFrame. This has been done for you.
+Slice the row labels 'Potter' to 'Perry' in reverse order. 
+To do this for hypothetical row labels 'a' and 'b', you could use a stepsize of -1 like so: df.loc['b':'a':-1].
+Print the p_counties_rev DataFrame. 
+This has also been done for you, so hit 'Submit Answer' to see the result of your slicing!
+
+# Slice the row labels 'Perry' to 'Potter': p_counties
+p_counties = election.loc['Perry':'Potter', :]
+
+# Print the p_counties DataFrame
+print(p_counties)
+
+# Slice the row labels 'Potter' to 'Perry' in reverse order: p_counties_rev
+p_counties_rev = election.loc['Potter':'Perry':-1]
+
+# Print the p_counties_rev DataFrame
+print(p_counties_rev)
+
+
+-------------------------------------------------
+
+Slice the columns from the starting column to 'Obama' and assign the result to left_columns
+Slice the columns from 'Obama' to 'winner' and assign the result to middle_columns
+Slice the columns from 'Romney' to the end and assign the result to right_columns
+The code to print the first 5 rows of left_columns, middle_columns, and right_columns has been written, 
+so hit 'Submit Answer' to see the results!
+
+It has been pre-loaded for you as election, with the index set to 'county'.
+
+
+# Slice the columns from the starting column to 'Obama': left_columns
+left_columns = election.loc[:, :'Obama']
+
+# Print the output of left_columns.head()
+print(left_columns.head())
+
+# Slice the columns from 'Obama' to 'winner': middle_columns
+middle_columns = election.loc[:, 'Obama':'winner']
+
+# Print the output of middle_columns.head()
+print(middle_columns.head())
+
+# Slice the columns from 'Romney' to the end: 'right_columns'
+right_columns = election.loc[:, 'Romney':]
+
+# Print the output of right_columns.head()
+print(right_columns.head())
+
+--------------------------------------------
+
+
+Create the list of row labels ['Philadelphia', 'Centre', 'Fulton'] and assign it to rows.
+Create the list of column labels ['winner', 'Obama', 'Romney'] and assign it to cols.
+Create a new DataFrame by selecting with rows and cols in .loc[] and assign it to three_counties.
+Print the three_counties DataFrame. This has been done for you, so hit 'Submit Answer` to see your new DataFrame.
+
+# Create the list of row labels: rows
+rows = ['Philadelphia', 'Centre', 'Fulton']
+
+# Create the list of column labels: cols
+cols = ['winner', 'Obama', 'Romney']
+
+# Create the new DataFrame: three_counties
+three_counties = pd.DataFrame(election.loc[rows, cols])
+
+# Print the three_counties DataFrame
+print(three_counties)
+
+
+----------------------------------------------
+
+
