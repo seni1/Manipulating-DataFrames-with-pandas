@@ -35,3 +35,18 @@ print(sales)
 -------------------------
 
 
+Generate a list months with the data ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']. This has been done for you.
+Assign months to sales.index.
+Print the modified sales dataframe and verify that you now have month information in the index.
+
+# Generate the list of months: months
+months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+
+# Assign months to sales.index
+_____
+
+# Print the modified sales DataFrame
+print(sales)
+
+
+--------------------------
