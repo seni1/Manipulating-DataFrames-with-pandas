@@ -1,0 +1,67 @@
+Print sales.loc[['CA', 'TX']]. Note how New York is excluded.
+Print sales['CA':'TX']. Note how New York is included.
+
+
+# Print sales.loc[['CA', 'TX']]
+print(____)
+
+# Print sales['CA':'TX']
+print(____)
+
+
+------------------------------------
+
+
+Create a MultiIndex by setting the index to be the columns ['state', 'month'].
+Sort the MultiIndex using the .sort_index() method.
+Print the sales DataFrame. 
+This has been done for you, so hit 'Submit Answer' to verify that indeed you have an index with the fields state and month!
+
+
+# Set the index to be the columns ['state', 'month']: sales
+sales = ____
+
+# Sort the MultiIndex: sales
+sales = ____
+
+# Print the sales DataFrame
+print(sales)
+
+
+----------------------------------------
+
+Set the index of sales to be the column 'state'.
+Print the sales DataFrame to verify that indeed you have an index with state values.
+Access the data from 'NY' and print it to verify that you obtain two rows.
+
+
+# Set the index to the column 'state': sales
+sales = ____
+
+# Print the sales DataFrame
+print(sales)
+
+# Access the data from 'NY'
+print(____)
+
+
+------------------------------------------
+
+Look up data for New York ('NY') in month 1 in the sales DataFrame.
+Look up data for California and Texas ('CA', 'TX') in month 2.
+Access the inner index month and look up data for all states in month 2. 
+Use (slice(None), 2) to extract all rows in month 2.
+
+
+# Look up data for NY in month 1 in sales: NY_month1
+NY_month1 = ____
+
+# Look up data for CA and TX in month 2: CA_TX_month2
+CA_TX_month2 = ____
+
+# Access the inner month index and look up data for all states in month 2: all_month2
+all_month2 = ____
+
+
+-----------------------------------------
+
